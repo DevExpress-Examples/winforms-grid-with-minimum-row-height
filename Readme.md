@@ -1,3 +1,10 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [Form1.cs](./CS/XtraGridMinRowHeight/Form1.cs) (VB: [Form1.vb](./VB/XtraGridMinRowHeight/Form1.vb))
+* [MinRowHeightGridView.cs](./CS/XtraGridMinRowHeight/MinRowHeightGridView.cs) (VB: [MinRowHeightGridView.vb](./VB/XtraGridMinRowHeight/MinRowHeightGridView.vb))
+* [Program.cs](./CS/XtraGridMinRowHeight/Program.cs) (VB: [Program.vb](./VB/XtraGridMinRowHeight/Program.vb))
+<!-- default file list end -->
 # Creating custom view that has the minimum row height
 
 
