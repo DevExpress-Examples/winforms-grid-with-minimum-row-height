@@ -63,19 +63,9 @@ Namespace MinRowHeightXtraGrid
 		Public Sub New(ByVal view As MinRowHeightGridView)
 			MyBase.New(view)
 		End Sub
-		Protected Overrides Function CalcMinRowHeight() As Integer
-		   Return Convert.ToInt32(PaintAppearance.Row.CalcTextSize(GInfo.Cache, "Gq", Integer.MaxValue).Width) + 1
-		End Function
-
-			Protected Overrides Function CalcRowCellDrawInfoCore(ByVal ri As GridDataRowInfo, ByVal ci As GridColumnInfoArgs, ByVal cell As GridCellInfo, ByVal nextColumn As GridColumnInfoArgs, ByVal calcEditInfo As Boolean, ByVal nextRow As GridRow, ByVal allowCache As Boolean) As GridCellInfo
-			If ci.Column IsNot Nothing Then
-				cell.CellValueRect.Inflate(0, CellValueVIndent)
-				If calcEditInfo Then
-					CreateCellEditViewInfo(cell, True)
-				End If
-			End If
-			Return MyBase.CalcRowCellDrawInfoCore(ri, ci, cell, nextColumn, calcEditInfo, nextRow, allowCache)
-			End Function
-	End Class
+        Protected Overrides Function CalcMinRowHeight() As Integer
+            Return Convert.ToInt32(PaintAppearance.Row.CalcTextSize(GInfo.Cache, "Gq", Integer.MaxValue).Width) + 1
+        End Function
+    End Class
 End Namespace
 
