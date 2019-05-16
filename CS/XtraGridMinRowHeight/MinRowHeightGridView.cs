@@ -44,15 +44,7 @@ namespace MinRowHeightXtraGrid {
     public class MinRowHeightGridViewInfo : GridViewInfo {
         public MinRowHeightGridViewInfo(MinRowHeightGridView view) : base(view) { }
         protected override int CalcMinRowHeight() {
-           return Convert.ToInt32(PaintAppearance.Row.CalcTextSize(GInfo.Cache, "Gq", int.MaxValue).Width) + 1;
-        }
-        
-            protected override GridCellInfo CalcRowCellDrawInfoCore(GridDataRowInfo ri, GridColumnInfoArgs ci, GridCellInfo cell, GridColumnInfoArgs nextColumn, bool calcEditInfo, GridRow nextRow, bool allowCache) {             
-            if(ci.Column != null) {
-                cell.CellValueRect.Inflate(0, CellValueVIndent);
-                if(calcEditInfo) CreateCellEditViewInfo(cell, true);                
-            }
-            return base.CalcRowCellDrawInfoCore(ri, ci, cell, nextColumn, calcEditInfo, nextRow, allowCache);
+            return Convert.ToInt32(PaintAppearance.Row.CalcTextSize(GInfo.Cache, "Gq", int.MaxValue).Width) + 1;
         }
     }
 }
