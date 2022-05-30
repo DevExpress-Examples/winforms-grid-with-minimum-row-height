@@ -64,7 +64,7 @@ Namespace MinRowHeightXtraGrid
 			MyBase.New(view)
 		End Sub
         Protected Overrides Function CalcMinRowHeight() As Integer
-            Return Convert.ToInt32(PaintAppearance.Row.CalcTextSize(GInfo.Cache, "Gq", Integer.MaxValue).Width) + 1
+            Return Convert.ToInt32(PaintAppearance.Row.CalcTextSize(GInfo.Cache, "Gq", Integer.MaxValue).Height) + 1
         End Function
     End Class
 End Namespace
