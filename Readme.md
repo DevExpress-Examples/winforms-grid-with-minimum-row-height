@@ -4,9 +4,9 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 
-# WinForms Data Grid - Create a custom View with the minimum row height
+# WinForms Data Grid - Create a custom View with the lowest row height
 
-The example creates a custom grid control (`MinRowHeightGridControl`) with the minimum possible row height. The custom grid is read-only and we assume that only text columns can be used.
+The example creates a custom grid control (`MinRowHeightGridControl`) with the lowest row height possible. The custom grid is read-only and we assume that only text columns can be used.
 
 ![WinForms Data Grid - Create a custom View with the minimum row height](https://raw.githubusercontent.com/DevExpress-Examples/creating-custom-view-that-has-the-minimum-row-height-e524/19.1.3%2B/media/winforms-grid-custom-row-height.png)
 
